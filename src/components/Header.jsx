@@ -105,14 +105,14 @@ export function Header() {
               type="button"
               onClick={() => setSearch(true)}
               aria-label="Search"
-              className="grid h-11 w-11 place-items-center transition-all duration-300 hover:-translate-y-0.5 hover:text-primary"
+              className="grid h-11 w-11 place-items-center transition-all duration-300 hover:scale-110 active:scale-95 hover:text-primary"
             >
               <Search className="h-[18px] w-[18px]" />
             </button>
             <Link
               to="/wishlist"
               aria-label="Wishlist"
-              className="grid h-11 w-11 place-items-center transition-all duration-300 hover:-translate-y-0.5 hover:text-primary"
+              className="grid h-11 w-11 place-items-center transition-all duration-300 hover:scale-110 active:scale-95 hover:text-primary"
             >
               <Heart className="h-[18px] w-[18px]" />
             </Link>
@@ -121,7 +121,7 @@ export function Header() {
               target="_blank"
               rel="noreferrer"
               aria-label="WhatsApp"
-              className="hidden h-11 w-11 place-items-center transition-all duration-300 hover:-translate-y-0.5 hover:text-primary sm:grid"
+              className="hidden h-11 w-11 place-items-center transition-all duration-300 hover:scale-110 active:scale-95 hover:text-primary sm:grid"
             >
               <MessageCircle className="h-[18px] w-[18px]" />
             </a>

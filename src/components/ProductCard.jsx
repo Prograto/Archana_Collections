@@ -59,7 +59,7 @@ export function ProductCard({ product, ratio = "portrait", priority }) {
         <div className="pointer-events-none absolute inset-x-0 bottom-0 translate-y-2 p-3 opacity-0 transition-all duration-500 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:translate-y-0 group-hover:opacity-100">
           <Link
             to={`/product/${product.slug}`}
-            className="eyebrow pointer-events-auto block bg-background/92 py-3 text-center text-foreground backdrop-blur-sm"
+            className="eyebrow pointer-events-auto block bg-background/92 py-3 text-center text-foreground backdrop-blur-sm transition-all duration-300 hover:bg-primary hover:text-primary-foreground"
           >
             View Details
           </Link>

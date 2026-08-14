@@ -119,6 +119,39 @@
     outline: 1px solid var(--gold);
     outline-offset: 3px;
   }
+
+  a, button {
+    transition: all 0.35s var(--ease-luxe);
+  }
+
+  /* Elevate hover behavior for primary CTA buttons */
+  .bg-primary {
+    transition: background-color 0.4s var(--ease-luxe), transform 0.4s var(--ease-luxe), box-shadow 0.4s var(--ease-luxe) !important;
+  }
+
+  .bg-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -10px color-mix(in oklab, var(--wine) 50%, transparent);
+  }
+
+  .bg-primary:active {
+    transform: translateY(0) scale(0.98);
+  }
+
+  /* Elevate hover behavior for border buttons */
+  .border-foreground\/20 {
+    transition: border-color 0.4s var(--ease-luxe), background-color 0.4s var(--ease-luxe), transform 0.4s var(--ease-luxe) !important;
+  }
+
+  .border-foreground\/20:hover {
+    transform: translateY(-2px);
+    background-color: color-mix(in oklab, var(--gold) 8%, transparent);
+    border-color: var(--gold);
+  }
+
+  .border-foreground\/20:active {
+    transform: translateY(0) scale(0.98);
+  }
 }
 
 /* ---------- utilities ---------- */
